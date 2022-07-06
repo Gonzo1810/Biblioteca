@@ -10,14 +10,18 @@ package biblioteca;
  * @author gonro
  */
 public class Socio {
-    private int rut;
+    private String rut;
     private String nombre;
     private String direccion;
+    private int cantlibsemp;
+    private boolean estadosocio;
 
-    public Socio(int rut, String nombre, String direccion) {
+    public Socio(int rut, String nombre, String direccion, int cantlibsemp, boolean estadosocio) {
         this.rut = rut;
         this.nombre = nombre;
         this.direccion = direccion;
+        this.cantlibsemp = cantlibsemp;
+        this.estadosocio = estadosocio;
     }
 
     public int getRut() {
@@ -42,6 +46,22 @@ public class Socio {
 
     public void setDireccion(String direccion) {
         this.direccion = direccion;
+    }
+
+    public int getCantlibsemp() {
+        return cantlibsemp;
+    }
+
+    public void setCantlibsemp(int cantlibsemp) {
+        this.cantlibsemp = cantlibsemp;
+    }
+
+    public boolean isEstadosocio() {
+        return estadosocio;
+    }
+
+    public void setEstadosocio(boolean estadosocio) {
+        this.estadosocio = estadosocio;
     }
     
 

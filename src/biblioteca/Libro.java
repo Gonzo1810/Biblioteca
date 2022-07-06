@@ -16,14 +16,16 @@ public class Libro {
     private String autor;
     private String disponibilidad;
     private String localizacion;
+    private int numero_estante;
 
-    public Libro(int codigoL, String titulo, String tematica, String autor, String disponibilidad, String localizacion) {
+    public Libro(int codigoL, String titulo, String tematica, String autor, String disponibilidad, String localizacion, int numero_estante) {
         this.codigoL = codigoL;
         this.titulo = titulo;
         this.tematica = tematica;
         this.autor = autor;
         this.disponibilidad = disponibilidad;
         this.localizacion = localizacion;
+        this.numero_estante = numero_estante;
     }
 
     public int getCodigoL() {
@@ -74,7 +76,15 @@ public class Libro {
         this.localizacion = localizacion;
     }
 
-    
+    public int getNumero_estante() {
+        return numero_estante;
+    }
+
+    public void setNumero_estante(int numero_estante) {
+        this.numero_estante = numero_estante;
+    }
+
+  
     
     
 }
