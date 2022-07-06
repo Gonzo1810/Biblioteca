@@ -14,11 +14,11 @@ public class Libro {
     private String titulo;
     private String tematica;
     private String autor;
-    private String disponibilidad;
+    private boolean disponibilidad;
     private String localizacion;
     private int numero_estante;
 
-    public Libro(int codigoL, String titulo, String tematica, String autor, String disponibilidad, String localizacion, int numero_estante) {
+    public Libro(int codigoL, String titulo, String tematica, String autor, boolean disponibilidad, String localizacion, int numero_estante) {
         this.codigoL = codigoL;
         this.titulo = titulo;
         this.tematica = tematica;
@@ -60,11 +60,11 @@ public class Libro {
         this.autor = autor;
     }
 
-    public String getDisponibilidad() {
+    public boolean getDisponibilidad() {
         return disponibilidad;
     }
 
-    public void setDisponibilidad(String disponibilidad) {
+    public void setDisponibilidad(boolean disponibilidad) {
         this.disponibilidad = disponibilidad;
     }
 

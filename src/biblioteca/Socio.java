@@ -16,7 +16,7 @@ public class Socio {
     private int cantlibsemp;
     private boolean estadosocio;
 
-    public Socio(int rut, String nombre, String direccion, int cantlibsemp, boolean estadosocio) {
+    public Socio(String rut, String nombre, String direccion, int cantlibsemp, boolean estadosocio) {
         this.rut = rut;
         this.nombre = nombre;
         this.direccion = direccion;
@@ -24,11 +24,11 @@ public class Socio {
         this.estadosocio = estadosocio;
     }
 
-    public int getRut() {
+    public String getRut() {
         return rut;
     }
 
-    public void setRut(int rut) {
+    public void setRut(String rut) {
         this.rut = rut;
     }
 

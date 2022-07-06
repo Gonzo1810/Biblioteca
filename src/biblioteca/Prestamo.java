@@ -16,12 +16,16 @@ public class Prestamo {
     private Date fechaPrestamo;
     private Date fechaEntrega;
     private int idSocio;
+    private String rutsocio;
+    private Date fechadevolucion;
 
-    public Prestamo(int codigoP, Date fechaPrestamo, Date fechaEntrega, int idSocio) {
+    public Prestamo(int codigoP, Date fechaPrestamo, Date fechaEntrega, int idSocio, String rutsocio, Date fechadevolucion) {
         this.codigoP = codigoP;
         this.fechaPrestamo = fechaPrestamo;
         this.fechaEntrega = fechaEntrega;
         this.idSocio = idSocio;
+        this.rutsocio = rutsocio;
+        this.fechadevolucion = fechadevolucion;
     }
 
     public int getCodigoP() {
@@ -55,6 +59,24 @@ public class Prestamo {
     public void setIdSocio(int idSocio) {
         this.idSocio = idSocio;
     }
+
+    public String getRutsocio() {
+        return rutsocio;
+    }
+
+    public void setRutsocio(String rutsocio) {
+        this.rutsocio = rutsocio;
+    }
+
+    public Date getFechadevolucion() {
+        return fechadevolucion;
+    }
+
+    public void setFechadevolucion(Date fechadevolucion) {
+        this.fechadevolucion = fechadevolucion;
+    }
+    
     
 
+  
 }
